@@ -5,6 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import { Link } from 'react-router-dom';
 
 const propTypes = {
   ...SectionProps.types
@@ -61,19 +62,22 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Landing template for <span className="text-color-primary">startups</span>
+            새로운 시대, 새로운 봇, 새로운 창조, <span className="text-color-primary">Locus</span>.
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                Team Locus는 <span className="text-color-primary">시대와 시대를 이어 주는</span>, 
+                다리와 같은 <span className="text-color-primary">Discord 봇</span>을 만듭니다.
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
+                  <Link to="/discord">
+                    <Button color="primary" wideMobile>
+                      Discord
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
+                  </Link>
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/LOCUS-TEAM">
+                    GitHub
                     </Button>
                 </ButtonGroup>
               </div>

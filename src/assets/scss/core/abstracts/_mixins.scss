@@ -1,6 +1,8 @@
 // Font Family
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
 @mixin font-family($elem) {
-	font-family: unquote(get-font-family($elem));
+	//font-family: unquote(get-font-family($elem));
+	font-family: 'Pretendard';
 }
 
 // Font-size + Line-height + Kerning

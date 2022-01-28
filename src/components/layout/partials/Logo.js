@@ -18,14 +18,15 @@ const Logo = ({
       {...props}
       className={classes}
     >
-      <h1 className="m-0">
+      <h1 className="m-0" style={{marginTop: '25px', display: 'flex'}}>
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/logo.svg')}
+            src={require('./../../../assets/logo.png')}
             alt="Open"
             width={32}
             height={32} />
-        </Link>
+        </Link>&nbsp;
+        <span style={{fontSize: '20px', lineHeight: '32px'}}>Team Locus</span>
       </h1>
     </div>
   );
