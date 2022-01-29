@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Locus가 하는 일',
+    paragraph: ''
   };
 
   return (
@@ -67,14 +67,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  편리한 디스코드 만들기
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  보다 편리한 디스코드를 만듭니다
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  사람들이 디스코드를 이용하면서 불편했던 점을 보완하고,<br />편리하게 이용 할 수 있도록 만듭니다.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -93,14 +93,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  즐거운 디스코드 만들기
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  보다 즐거운 디스코드를 만듭니다
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  사람들과 사람들을 이어주는 디스코드에서, 즐거움과 즐거움을 이어주는 디스코드로 나아갈 수 있도록 만듭니다.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -119,14 +119,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  더 나은 디스코드 소셜 네트워크 환경 만들기
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  보다 나은 디스코드의 소셜 네트워킹<br />환경을 만듭니다
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  디스코드의 핵심인 소셜 네트워킹 환경을 개선하려고 노력하고 있습니다.
+                </p>
               </div>
               <div className={
                 classNames(
