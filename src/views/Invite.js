@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import swal from 'sweetalert';
 
 // 프로필에서 사용 할 데이터
