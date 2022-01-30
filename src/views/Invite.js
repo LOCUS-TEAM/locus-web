@@ -34,7 +34,7 @@ const Invite = ({ match }) => {
           <title>{serviceData[service].title} Invite : Team Locus</title>
       </MetaTags>
 
-      {/*window.location.replace(serviceData[service].invite)*/}
+      {window.location.replace(serviceData[service].invite)}
 
     </>
   )
