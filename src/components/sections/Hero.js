@@ -61,9 +61,9 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+            <h2 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
             새로운 시대, 새로운 봇, 새로운 창조, <span className="text-color-primary">Locus</span>.
-            </h1>
+            </h2>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Team Locus는 <span className="text-color-primary">시대와 시대를 이어 주는</span>, 
@@ -71,16 +71,12 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Link to="/discord" alt="Go to Discord Forum">
-                    <Button color="primary" wideMobile>
+                  <Link to="/discord" className="button button-primary button-wide-mobile" alt="Go to Discord Forum">
                       Discord
-                    </Button>
                   </Link>
-                  <a href="https://github.com/LOCUS-TEAM" alt="Go to GitHub Profile">
-                    <Button color="dark" wideMobile>
-                      GitHub
-                    </Button>
-                  </a>
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/LOCUS-TEAM" alt="Go to GitHub Profile">
+                    GitHub
+                  </Button>
                 </ButtonGroup>
               </div>
             </div>
