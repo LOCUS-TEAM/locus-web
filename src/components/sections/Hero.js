@@ -76,9 +76,11 @@ const Hero = ({
                       Discord
                     </Button>
                   </Link>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/LOCUS-TEAM" alt="Go to GitHub Profile">
-                    GitHub
-                  </Button>
+                  <a href="https://github.com/LOCUS-TEAM" alt="Go to GitHub Profile">
+                    <Button color="dark" wideMobile>
+                      GitHub
+                    </Button>
+                  </a>
                 </ButtonGroup>
               </div>
             </div>
