@@ -9,6 +9,8 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import Invite from './views/Invite';
+import Discord from './views/Discord';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -37,6 +39,8 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute path="/invite/:service" component={Invite} layout={LayoutDefault} />
+          <AppRoute path="/discord" component={Discord} layout={LayoutDefault} />
         </Switch>
       )} />
   );
