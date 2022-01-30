@@ -21,12 +21,12 @@ const FooterSocial = ({
       <ul className="list-reset">
         <li>
           <Link to="/discord">
-            <FaDiscord size="24" />
+            <FaDiscord size="24" alt="Discord Logo" />
           </Link>
         </li>
         <li>
           <a href="https://github.com/LOCUS-TEAM">
-            <FaGithub size="24" />
+            <FaGithub size="24" alt="GitHub Logo" />
           </a>
         </li>
       </ul>

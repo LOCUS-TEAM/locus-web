@@ -1,5 +1,6 @@
-//import React from 'react';
+import React from 'react';
 //import swal from 'sweetalert';
+import MetaTags from 'react-meta-tags';
 
 const Discord = ({ match }) => {
 
@@ -8,7 +9,18 @@ const Discord = ({ match }) => {
     window.location.replace('/');
   });*/
 
-  window.location.replace("https://tinyurl.com/discordlocus");
+  return (
+    <>
+    
+      <MetaTags>
+          <meta property="og:title" content="Discord : Team Locus" />
+          <title>Discord : Team Locus</title>
+      </MetaTags>
+
+      {window.location.replace("https://tinyurl.com/discordlocus")}
+
+    </>
+  )
 
 }
 

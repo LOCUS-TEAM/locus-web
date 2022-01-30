@@ -1,10 +1,17 @@
-//import React from 'react';
-import swal from 'sweetalert';
+import React from 'react';
+import MetaTags from 'react-meta-tags';
+import NotService from './NotService';
 
 // 프로필에서 사용 할 데이터
 const serviceData = {
-  leaf: "https://discord.com/oauth2/authorize?client_id=903287362698760263&permissions=0&scope=bot%20applications.commands",
-  ravi: "https://discord.com/oauth2/authorize?client_id=902786497785241600&permissions=0&scope=bot%20applications.commands"
+  leaf: {
+    "invite": "https://discord.com/oauth2/authorize?client_id=903287362698760263&permissions=0&scope=bot%20applications.commands",
+    "title": "Leaf"
+  },
+  ravi: {
+    "invite": "https://discord.com/oauth2/authorize?client_id=902786497785241600&permissions=0&scope=bot%20applications.commands",
+    "title": "Ravi"
+  }
 };
 
 const Invite = ({ match }) => {
@@ -13,14 +20,24 @@ const Invite = ({ match }) => {
 
   if (!serviceData[service]) {
 
-    return swal("해당 서비스는 존재하지 않습니다.", "정식 출시된 서비스인지 확인해 주세요.", "error")
-    .then(() => {
-      window.location.replace('/');
-    });
+    return (
+      <NotService />
+    )
 
   }
 
-  window.location.replace(serviceData[service]);
+  return (
+    <>
+
+      <MetaTags>
+          <meta property="og:title" content={serviceData[service].title+" Invite : Team Locus"} />
+          <title>{serviceData[service].title} Invite : Team Locus</title>
+      </MetaTags>
+
+      {/*window.location.replace(serviceData[service].invite)*/}
+
+    </>
+  )
 
 }
 

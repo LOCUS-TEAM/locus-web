@@ -71,14 +71,14 @@ const Hero = ({
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Link to="/discord">
+                  <Link to="/discord" alt="Go to Discord Forum">
                     <Button color="primary" wideMobile>
                       Discord
                     </Button>
                   </Link>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/LOCUS-TEAM">
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/LOCUS-TEAM" alt="Go to GitHub Profile">
                     GitHub
-                    </Button>
+                  </Button>
                 </ButtonGroup>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Hero = ({
             <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
-              aria-controls="video-modal"
+              // aria-controls="video-modal"
               onClick={openModal}
             >
               <Image
