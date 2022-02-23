@@ -41,7 +41,6 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute exact path="/" component={Makalong} layout={LayoutDefault} />
           <AppRoute path="/main" component={Home} layout={LayoutDefault} />
           <AppRoute path="/invite/:service" component={Invite} layout={LayoutDefault} />
           <AppRoute path="/discord" component={Discord} layout={LayoutDefault} />
