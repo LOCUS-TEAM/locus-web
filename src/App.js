@@ -10,7 +10,6 @@ import LayoutError from './layouts/LayoutError';
 
 // Views 
 import Home from './views/Home';
-import Makalong from './views/Makalong';
 import Invite from './views/Invite';
 import Discord from './views/Discord';
 import NotFound from './views/NotFound';
