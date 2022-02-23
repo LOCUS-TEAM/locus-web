@@ -10,6 +10,7 @@ import LayoutError from './layouts/LayoutError';
 
 // Views 
 import Home from './views/Home';
+import Makalong from './views/Makalong';
 import Invite from './views/Invite';
 import Discord from './views/Discord';
 import NotFound from './views/NotFound';
@@ -40,7 +41,8 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/" component={Makalong} layout={LayoutDefault} />
+          <AppRoute path="/main" component={Home} layout={LayoutDefault} />
           <AppRoute path="/invite/:service" component={Invite} layout={LayoutDefault} />
           <AppRoute path="/discord" component={Discord} layout={LayoutDefault} />
           <AppRoute path="/" component={NotFound} layout={LayoutError} />
